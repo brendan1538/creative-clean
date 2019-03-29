@@ -1,5 +1,5 @@
 # creative-clean
-Script walks through a directory, looks for old files with a certain extension, and deletes them automatically.
+A script that walks through a directory, looks for old files with a certain extension, and deletes them automatically if they're older than a specified number of days.
 
 ------------------------------------------
 
@@ -12,13 +12,13 @@ CreativeClean is a solution to the inevitable clutter of old creative (Photoshop
 Set-up
 1.	Place the creative-clean.py file in the highest folder you. Want cleaned. It will begin there and work down through every sub-directory.
 2.	Open up the creative-clean.py script in a text editor such as VSCode or Atom.
-3.	Adjust the timedelta below to how many days back you’d like to keep creative (the default keeps everything from within the past 30 days, for example).
-   a.	dline = (datetime.datetime.today() +
+3.	Adjust the timedelta below to how many days back you’d like to keep creative (the default keeps everything from within the past 30 days, for example). <br>
+     a.	dline = (datetime.datetime.today() +
    	         datetime.timedelta(-30)).strftime('%m/%d/%Y')
-4.	Add any other extensions for files you’d like to be deleted to the following tuple
-   a.	extensions = ('.png', '.jpg', '.psd', '.mov', '.mp4')
-5.	The very last line calculates how often to run the script. The default is 30 days (d X o  where d = number of seconds in one day and o = the span between each occurrence of the script running). You can adjust o to fit your desired distance between each clean.
-   a.	time.sleep(86400*30)  # Run every 30 days
+4.	Add any other extensions for files you’d like to be deleted to the following tuple <br>
+     a.	extensions = ('.png', '.jpg', '.psd', '.mov', '.mp4')
+5.	The very last line calculates how often to run the script. The default is 30 days (d X o  where d = number of seconds in one day and o = the span between each occurrence of the script running). You can adjust o to fit your desired distance between each clean. <br>
+     a.	time.sleep(86400*30)  # Run every 30 days
 
 
 Running
