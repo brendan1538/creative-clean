@@ -1,8 +1,3 @@
-# NOTES:
-# Try adding an option to relocate files rather than remove them.
-# Add and remove file types in preferences
-# Return a list of file types that were not found
-
 import os
 import os.path
 import time
@@ -62,7 +57,6 @@ def clean_dir():
 
 print("""
                    *** Welcome to Creative Clean! ***
-
     This tool automates the removal of old, unused files in a directory.
     It will even search through subfolders, so make sure this script is
     placed in the top-most directory you want to work down from!
@@ -78,7 +72,6 @@ if(user_input.lower() == "y") or (user_input.lower() == "yes"):
                 Default occurrence is every 30 days.
               Consult README.pdf to see how to adjust
                 settings and run in the background.
-
               CTRL+Z to pause script, CTRL+C to exit
             """)
             # Clean the directory
